@@ -9,11 +9,11 @@
             <h1>Izračunaj rešenja sistema jednačina</h1>
         </div>
         <div id="info">
-            <p>Unesi parametre jednačine u obliku da parametri stoje u razmaku od 1 space-a između. Parametre naredne jednačine uneti u novom redu na isti način.
+            <p>Unesi parametre jednačine u obliku da parametri stoje u razmaku od 1 space-a između. Parametre naredne jednačine uneti u nastavku na isti način.
             </p>
         </div>
         <form action="" method="post">
-            <textarea name="matrica" rows="5" cols="40"></textarea>
+            <textarea name="matrica" id="matrica" rows="5" cols="40"></textarea>
             <input type="submit" name="izracunaj" id="izracunaj" value="Izračunaj">
         </form>
         <?php 
@@ -48,7 +48,7 @@
             <span id="rezultati">Rezultat: <?php if(is_string($resenja_niz)){echo $resenja_niz;} else{?><br> <?php foreach($resenja_niz as $broj => $resenje) {echo ' Resenje x'.$broj.' iznosi '.$resenje; echo "<br>";}}?></span>
         
         <div id="footer">
-            <p>Copyright Mihailo Jakovljević @ Nanotouch for matf.rs</p>
+            <p>Copyright Mihailo Jakovljević @ <a href="nanotouch.co">Nanotouch</a> for <a href="http://www.matf.bg.ac.rs/">math.rs</p>
         </div>
     </body>
 </html>
